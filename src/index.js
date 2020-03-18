@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
     let config = bracketsConfig.flat();
     let result;
-    for ( let i= 0; i < config.length/2;) {
+    for ( let i= 0; i < config.length;) {
         if (str.includes(config[i]+config[i+1])== false)
         i+=2;
         else{
